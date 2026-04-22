@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Split Keyboard Editor</string>
+    <string name="button_label">Save</string>
+    <string name="button_label_cancel">Cancel</string>
+</resources>
