@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Left Keyboard -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:columnCount="3">
+
+            <Button android:text="Q W E R T" style="@style/KeyboardButton"/>
+            <Button android:text="A S D F G" style="@style/KeyboardButton"/>
+            <Button android:text="Z X C V B" style="@style/KeyboardButton"/>
+            <Button android:text="[ ]" style="@style/KeyboardButton"/>
+        </GridLayout>
+    </LinearLayout>
+
+    <!-- Center panel with Number row and Text Editor -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="5">
+
+            <Button android:text="1" style="@style/KeyboardButton"/>
+            <Button android:text="2" style="@style/KeyboardButton"/>
+            <Button android:text="3" style="@style/KeyboardButton"/>
+            <Button android:text="4" style="@style/KeyboardButton"/>
+            <Button android:text="5" style="@style/KeyboardButton"/>
+
+        </GridLayout>
+
+        <EditText
+            android:id="@+id/textEditor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Type here..."
+            android:gravity="top|start"/>
+    </LinearLayout>
+
+    <!-- Right Keyboard -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:columnCount="3">
+
+            <Button android:text="Y U I O P" style="@style/KeyboardButton"/>
+            <Button android:text="H J K L M" style="@style/KeyboardButton"/>
+            <Button android:text="N . ? !" style="@style/KeyboardButton"/>
+            <Button android:text="[ ]" style="@style/KeyboardButton"/>
+            <Button android:text="Shift" style="@style/KeyboardButton"/>
+            <Button android:text="Space" style="@style/KeyboardButton"/>
+        </GridLayout>
+    </LinearLayout>
+
+</RelativeLayout>
